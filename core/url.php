@@ -83,9 +83,6 @@ class url {
 			$url = "/{$controller_name}/{$action_name}/".implode("/", $args);
 		}
 		$url = rtrim($url, "/");
-		if(isset($_GET['nodebug'])){
-			$url = $url."?nodebug";
-		}
 		return $url;
 	}
 	public function redirect($url, $should_be_null = NULL){
