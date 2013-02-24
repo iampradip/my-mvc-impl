@@ -38,7 +38,7 @@ Libraries
 4. Library class must inherit "app_library" class.
 5. Library object can be accessed from controller or model by $this->library($library_name); , $library_name is string and without "_library" suffix.
 6. Library object is initialized only once and same object is returned when $this->library($library_name) is used several times in controller or model.
-7. Library classes should not use controller or model classes. It should not access any view either. But they can be done anyway.
+7. Library classes should not use controller or model classes. It should not access any view either. But it's still possible to access them.
 
 
 Views
